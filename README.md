@@ -5,7 +5,7 @@ flowchart TD
     C --> |FALSE| Z([Stop])
     C --> |TRUE| D[var baris]
     D --> E[j = 1]
-    E --> F{j = 5}
+    E --> F{j <= 5}
     F --> |TRUE| G[ baris = baris + ' *';]
     G --> H[j++]
     H --> F
