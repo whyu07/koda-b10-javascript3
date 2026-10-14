@@ -1,8 +1,8 @@
 ```mermaid
 flowchart TD
     A([Mulai]) --> B[i = 1]
-    B --> C{i = 5}
-    C --> |FALSE| Z(Stop)
+    B --> C{i <= 5}
+    C --> |FALSE| Z([Stop])
     C --> |TRUE| D[var baris]
     D --> E[j = 1]
     E --> F{j = 5}
@@ -19,8 +19,8 @@ flowchart TD
 ```mermaid
 flowchart TD
     A([Mulai]) --> B[i = 1]
-    B --> C{i = 5}
-    C --> |FALSE| Z(Stop)
+    B --> C{i <= 5}
+    C --> |FALSE| Z([Stop])
     C --> |TRUE| D[baris = '']
     D --> E[j = 1]
     E --> F{j <= i}
