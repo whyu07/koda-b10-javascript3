@@ -4,7 +4,7 @@ flowchart TD
     B --> C{i <= 5}
     C --> |FALSE| Z([Stop])
     C --> |TRUE| D[baris = ' ']
-    D --> E[/j = 1/]
+    D --> E[j = 1]
     E --> F{j <= 5}
     F --> |TRUE| G[ baris = baris + ' *';]
     G --> H[j++]
@@ -22,7 +22,7 @@ flowchart TD
     B --> C{i <= 5}
     C --> |FALSE| Z([Stop])
     C --> |TRUE| D[baris = ' ']
-    D --> E[/j = 1/]
+    D --> E[j = 1]
     E --> F{j <= i}
     F --> |TRUE| G[ baris = baris + ' *';]
     G --> H[j++]
